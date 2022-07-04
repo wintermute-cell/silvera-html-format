@@ -15,7 +15,7 @@ if file_path is not None and file_path != "":
 
     with open(file_path, "r") as f:
         s = bs(f.read(), features='lxml')
-        formatted = s.prettify_cust_space(indent_width=4)
+        formatted = prettify_cust_space(indent_width=4)
 
     with open(file_path, "w") as f:
         f.write(formatted)
